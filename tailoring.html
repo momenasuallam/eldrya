@@ -19,8 +19,10 @@
   </head>
 
   <body>
-    <header>
-      <div class="logobox">
+   <header>
+    <div class="container">
+       <div class="headermain">
+          <div class="logobox">
         <a href="./index.html"
           ><img src="./images/main-logo.png" class="logoclass"
         /></a>
@@ -34,7 +36,7 @@
             aria-label="search"
             aria-describedby="button-addon2"
           />
-          <button class="btn btn-primary" type="button" id="button-addon2">
+          <button class="btn" type="button" id="button-addon2">
             <i class="fa fa-search"></i>
           </button>
         </div>
@@ -53,10 +55,14 @@
           <a href="#" class="btn"> <i class="fa fa-shopping-cart"></i></a>
         </div>
       </div>
+       </div>
+    </div>
     </header>
 
+
     <main>
-      <section class="stepsdiv">
+    <div class="container">
+          <section class="stepsdiv">
         <div class="div1chorail">
           <h5>The Steps to finish</h5>
         </div>
@@ -72,27 +78,28 @@
               <a href="./tailoring.html"> Tailoring </a>
             </li>
             <li class="">
-              <a href="measurment.html"> Measurment </a>
-            </li>
-            <li class="">
               <a href="pay.html"> Pay </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="trailoringmain">
-        <div class="row">
+           <h3>Tailoring</h3>
+            <hr class="hrt3">
+      <div class="tailohjh">
+     <div class="row">
           <div class="col-md-3">
             <div class="sideimgtailing">
               <img src="./images/img1.jpg" />
-              <p>Name</p>
+              <p>Party Dress</p>
             </div>
           </div>
           <div class="col-md-9">
             <div class="tailongdiv2">
-              <h3>Tailoring</h3>
               <div class="tailsizing">
-                <div class="maintailsize">
+                <div class="row">
+                  <div class="col-md-7">
+  <div class="maintailsize">
                   <div class="tailsizingdiv">
                     <div>
                       <p>Sleeve</p>
@@ -287,8 +294,79 @@
                       </div>
                     </div>
                   </div>
+
+
+                   <div class="ownmear">
+              <h4>OR</h4>
+                  <div class="meaurmntform">
+              <div class="">
+                <form>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Length</label>
+                    </div>
+                    <div class="dflexpay2">
+                      <input type="number" class="form-control legtn1" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Shoulder</label>
+                    </div>
+                    <div class="dflexpay2">
+                      <input type="number" class="form-control legtn2" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Bust</label>
+                    </div>
+                    <div class="dflexpay2">
+                         <input type="number" class="form-control legtn3" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Waist</label>
+                    </div>
+                    <div class="dflexpay2">
+                         <input type="number" class="form-control legtn4" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Hips</label>
+                    </div>
+                    <div class="dflexpay2">
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Sleave</label>
+                    </div>
+                    <div class="dflexpay2">
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="dflexpay align-items-center mb-3">
+                    <div class="dflexpay1">
+                      <label class="col-form-label">Neck</label>
+                    </div>
+                    <div class="dflexpay2">
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+              </div>
+            </div>
+            </div>
                 </div>
-                <div class="tailingcharges">
+                  </div>
+                <div class="col-md-5">
+                      <div class="tailingcharges">
                   <div class="">
                     <form>
                       <div class="dflexpay align-items-center mb-3">
@@ -299,9 +377,10 @@
                           <div class="input-group">
                             <span class="input-group-text">$</span>
                             <input
-                              type="text"
-                              class="form-control"
-                              value="00"
+                              type="number"
+                              class="form-control chargesval1"
+                              value="0"
+                              readonly
                             />
                           </div>
                         </div>
@@ -315,9 +394,10 @@
                           <div class="input-group">
                             <span class="input-group-text">$</span>
                             <input
-                              type="text"
-                              class="form-control"
-                              value="00"
+                              type="number"
+                              class="form-control chargesval2"
+                              value="0"
+                              readonly
                             />
                           </div>
                         </div>
@@ -331,29 +411,16 @@
                           <div class="input-group">
                             <span class="input-group-text">$</span>
                             <input
-                              type="text"
-                              class="form-control"
-                              value="00"
+                             type="number"
+                              class="form-control chargesval3"
+                              value="0"
+                              readonly
                             />
                           </div>
                         </div>
                       </div>
 
-                      <div class="dflexpay align-items-center mb-3">
-                        <div class="dflexpay1">
-                          <label class="col-form-label">Charges</label>
-                        </div>
-                        <div class="dflexpay2">
-                          <div class="input-group">
-                            <span class="input-group-text">$</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              value="00"
-                            />
-                          </div>
-                        </div>
-                      </div>
+            
 
                       <div class="dflexpay align-items-center mb-3">
                         <div class="dflexpay1">
@@ -363,9 +430,10 @@
                           <div class="input-group">
                             <span class="input-group-text">$</span>
                             <input
-                              type="text"
-                              class="form-control"
-                              value="00"
+                            type="number"
+                              class="form-control chargesval4"
+                              value="0"
+                              readonly
                             />
                           </div>
                         </div>
@@ -379,27 +447,67 @@
                           <div class="input-group">
                             <span class="input-group-text">$</span>
                             <input
-                              type="text"
-                              class="form-control"
-                              value="00"
+                              type="number"
+                              class="form-control totalamount"
+                              value="0"
+                               readonly
                             />
                           </div>
                         </div>
                       </div>
+                         <a href="pay.html" class="btn btn-success widthfull">Pay</a>
                     </form>
+                 
                   </div>
                 </div>
+                  </div>
+
+                </div>
+              
+
+               
               </div>
             </div>
+           
+           
           </div>
         </div>
+      </div>
       </section>
+    </div>
     </main>
+
+     <footer class="footer">
+   
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2021 Eldrya | All Rights Reserved</p>
+  </footer>
 
     <!-- JavaScript File -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./js/custjs.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

@@ -19,8 +19,10 @@
   </head>
 
   <body>
-    <header>
-      <div class="logobox">
+ <header>
+    <div class="container">
+       <div class="headermain">
+          <div class="logobox">
         <a href="./index.html"
           ><img src="./images/main-logo.png" class="logoclass"
         /></a>
@@ -34,7 +36,7 @@
             aria-label="search"
             aria-describedby="button-addon2"
           />
-          <button class="btn btn-primary" type="button" id="button-addon2">
+          <button class="btn" type="button" id="button-addon2">
             <i class="fa fa-search"></i>
           </button>
         </div>
@@ -53,10 +55,13 @@
           <a href="#" class="btn"> <i class="fa fa-shopping-cart"></i></a>
         </div>
       </div>
+       </div>
+    </div>
     </header>
 
     <main>
-      <section class="stepsdiv">
+      <div class="container">
+            <section class="stepsdiv">
         <div class="div1chorail">
           <h5>The Steps to finish</h5>
         </div>
@@ -71,9 +76,6 @@
             <li class="">
               <a href="./tailoring.html"> Tailoring </a>
             </li>
-            <li class="">
-              <a href="measurment.html"> Measurment </a>
-            </li>
             <li class="active">
               <a href="pay.html"> Pay </a>
             </li>
@@ -82,6 +84,7 @@
       </section>
       <section class="choosetailormain">
         <h3>Pay</h3>
+         <hr class="hrt2">
         <div class="paymentmain">
           <form>
             <div class="dflexpay align-items-center mb-3">
@@ -155,15 +158,46 @@
                 </div>
               </div>
             </div>
+
+             <button type="submit" class="btn btn-success paymentbtn1">Payment</button>
           </form>
         </div>
       </section>
+      </div>
     </main>
+
+       <footer class="footer">
+   
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2021 Eldrya | All Rights Reserved</p>
+  </footer>
 
     <!-- JavaScript File -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./js/custjs.js"></script>
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
